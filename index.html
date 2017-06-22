@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Component Test</title>
+  <link rel="stylesheet" href="/index.css" />
+  <script type="text/javascript">
+    window.addEventListener('message', function(e) {
+      if (e.data.type === 'webpackOk') return;
+      console.log(e);
+    });
+  </script>
+</head>
+
+<body>
+  <div>
+    <textarea id="csl" autofocus></textarea>
+  </div>
+  <div>
+    <textarea id="edit"></textarea>
+  </div>
+  <input type="file" id="upload" style="display: none" />
+  <iframe id="frame" src="/sendbox.html"
+    sendbox="allow-scripts"
+    style="visibility: hidden; height:0; width:0; border: none"
+    scrolling="no">
+  </iframe>
+</body>
+<script src="/common.js"></script>
+<script src="/index.js"></script>
+
+</html>

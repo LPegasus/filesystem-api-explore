@@ -1,0 +1,21 @@
+{
+  "name": "filesystem_demo",
+  "version": "1.0.0",
+  "description": "filesystem APIs demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.2"
+  }
+}
