@@ -152,6 +152,8 @@
 
   - #### remove: _(successCallback?: () => void, errorCallback?: (err: Error) => void) => void_
 
+    > 删
+
     ```typescript
     fileEntry.remove(function() {
       // removed successfully...
@@ -161,6 +163,8 @@
     ```
 
   - #### getMetaData: _(callback: (metadata: Metadata) => void) => void_
+
+    > 获取文件信息（最后变更时间、大小）
 
     ```typescript
     fs.root.getFile('folderA/folderB/file.jpg', {}, function(fileEntry: FileEntry) {
